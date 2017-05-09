@@ -1,0 +1,33 @@
+Am I correct in assuming that all input to the AuthenticationComponent methods will be valid? In other words, is there any reason to test for specific exceptions?
+
+If all user input is guaranteed to be valid, must I check for the presence of exceptions at all?
+
+Is it permissible to create just one test dummy (that essentially encompasses a full implementation of the data store)?
+
+Is it assumed that the data_store passed into the constructor will be valid?
+
+What behavior should be exhibited when create_user() is called on a user_name that already exists? Should the existing password be overwritten?
+
+Is there any constraint on what a user_name must contain? Can it be an empty string?
+
+Is there any constraint on what a password must contain? Can it be an empty string?
+
+Is there a limit on the number of characters for a user_name? For a password?
+
+Will usernames be unique in the data store? Will passwords be unique in the data store?
+
+What behavior should be exhibited if change_password() is called on a user_name that does not exist?
+
+What behavior should be exhibited if change_password() is called with a new_password that is equal to the old password?
+
+What behavior should be exhibited if rename_user() is called on a user_name that does not exist in the data store?
+
+What behavior should be exhibited if rename_user() is called with a new_user_name that is the same as the old user_name?
+
+Must I check to make sure that the Authentication component is only storing user information? If so, what means do I have to ensure that the data passed in is indeed user data?
+
+Is there a limit to how many times each method in Authentication component can access the data store? If so, can I add a field to the DataStore that keeps track of how many times it has been assessed?
+
+Is there any need to test the constructor for exceptional behavior?
+
+Are strings in the data store case sensitive?

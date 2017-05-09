@@ -1,0 +1,15 @@
+{
+  "test_impl.py::TestChangePassword::()::test_change_password_existing_user_valid_password_change": true,
+  "test_impl.py::TestChangePassword::()::test_change_password_non_existing_user": true,
+  "test_impl.py::TestChangePassword::()::test_change_password_should_access_data_store_once": true,
+  "test_impl.py::TestChangePassword::()::test_change_password_to_same_as_old_password": true,
+  "test_impl.py::TestCreateUser::()::test_create_user_should_access_data_store_once": true,
+  "test_impl.py::TestLoginUser::()::test_login_user_existing_user_and_bad_password": true,
+  "test_impl.py::TestLoginUser::()::test_login_user_existing_user_and_password": true,
+  "test_impl.py::TestLoginUser::()::test_login_user_non_existing_user": true,
+  "test_impl.py::TestLoginUser::()::test_login_user_should_access_data_store_once": true,
+  "test_impl.py::TestRenameUser::()::test_rename_user_existing_user_rename_same_as_old_name": true,
+  "test_impl.py::TestRenameUser::()::test_rename_user_existing_user_valid_rename": true,
+  "test_impl.py::TestRenameUser::()::test_rename_user_non_existing_user": true,
+  "test_impl.py::TestRenameUser::()::test_rename_user_should_access_data_store_three_times": true
+}

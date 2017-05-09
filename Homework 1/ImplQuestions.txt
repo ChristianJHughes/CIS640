@@ -1,0 +1,25 @@
+# Initial Questions
+Could I create a separate class (called "Person") to store the properties of a person & their relations? Each person would be represented as a separate object.
+Is it acceptable for the "create_person" and "get_person" methods to return "Person" objects derived from the aforementioned class?
+Can it be assumed that not all people will have the same set of properties? In other words, do I need to define a list of initial properties in the "Person" class definition?
+Should there be any properties or relations initialized by default in the "create_person" method? For example, should every person begin with a property called "name" initialized to empty string, or similar?
+Would it be acceptable to add a field to the "Network" class that stores a list of all the people ("Person" objects) in the network?
+Can the "add_person_property" accept any property the user desires, or is the number of acceptable properties limited?
+Is friend the only valid relation in this network? If not, are there an infinite number of relations (Uncle, Father, Peer, etc.)?
+Is it acceptable to create another class called "Relation" to hold relation information, or should this information remain solely in each the Person object? Is it up to me how I represent this data structure?
+Can two people have more than one relation?
+Is the nature of a relation (father, friend, etc.) denoted by a property of that relation? Could other properties be added to a relation (quality of relationship, for example)?
+If no person is found with the given name, should I return None? Empty String? A new Person object?
+If more than one person is found with the same name, should I return all of those people, or just one (say the first one in the list of people)?
+Will the name passed into these functions be the customers full name? Just their first name?
+In the friends_of_friends function, will returning a list of applicable "Persons" be acceptable? If no friends of friends exist, should I return None? An empty list? An empty string?
+
+# Follow-Up Questions
+Will properties be passed in as strings?
+Are properties case sensitive?
+Is the assumed the property for name is called "name"?
+What if the user attempts to add a property to person that already exists? Should it override the existing property (and does the same go for adding a property to a relation)?
+What if add_relation_property is called on two people that have no relation?
+What is the expected property and value for someone that is considered a friend? Perhaps a property called "relationship" who's value is "friend"? I
+Can friends of friends return duplicates? Should it return the name of the person passed into the function?
+What should I do if I call friends_of_friends() on a name that isn't in the network? Should that throw a RuntimeError exception?

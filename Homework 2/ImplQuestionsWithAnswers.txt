@@ -1,0 +1,38 @@
+Should the function "tic_tac_toe_check" be wrapped in a class? No, it should be a top-level function in impl.py. Can "impl.py" contain additional helper functions? Yes but you are responsible that none of these functions interfere with your implementation and require extra attention from the client.
+
+Is the list of strings being passed to the function one-dimensional, or two-dimensional? 1-dim
+
+Do the first three elements make up the first row of the tic-tac-toe board (from left to right), the next three elements make up the second row, etc.? If not, how are the elements of the list mapped to the tic-tac-toe board?  Yes, left to right and top to bottom.
+
+Is the tic-tac-toe board assumed to be 3x3 spaces?  It is supposed to be 3x3.
+
+How should I handle an empty list being passed to the function?  Raise ValueError exception
+
+How should I handle a list that contains data types other than strings?  Raise TypeError exception
+
+How should I handle a list with a number of strings that is not equal to the number of spaces on the tic-tac-board? Raise ValueError exception
+
+How should I handle a non-list being passed to the function (an int, for example)?  Raise ValueError exception
+
+How should the function behave when it is called without any parameters? Will that ever happen? If your function has one parameter, then it cannot be invoked without arguments.
+
+How is a black space on the tic-tac-toe board represented in the list? An empty string, perhaps? What do you mean by "black" space?
+
+Is it assumed that there will only be two symbols in play on the board at one time? It is supposed to only have two symbols. Can there be more than two?  Like us, Joan can write buggy code :)
+
+Will the symbols be "X" and "O" as is traditional, or can they be any string? They will be "x" and "o"
+Are the symbol strings case sensitive?  Yes
+
+Should the winning symbol be returned as a string? Yes Is this string case sensitive? Yes
+
+What should the function return if no symbol has a winning pattern?  Return None
+
+What should the function return if multiple symbols have winning patterns?  Raise ValueError exception
+
+How are the empty spaces on the board represented (spaces that have not yet been played on)? An empty string, perhaps? Empty string ("")
+
+How should the function handle the presence of more than two symbols?  Raise ValueError exception
+
+How should the function handle the presence of symbols that are not “x” or “o”? Raise ValueError exception
+
+How should the function handle the presence of multiple winning patterns by the same symbol (two three-in-a-row patterns by “x”, for example)? Raise ValueError exception

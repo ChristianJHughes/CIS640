@@ -1,0 +1,29 @@
+Must I test that None, Nan, Inf, and -Inf raise a ValueError exception when passed to enqueue? Can these values be excluded via the strategy for enqueue input?
+
+Is it sufficient to test test float, integer, and text data types? Are additional data types required?
+
+Is it wise to apply the @pytest.mark.timeout(...) decoration to each test in order to account for unintended behavior?
+
+Do you expect specific examples for testing any of the properties (with the @example() decorator), or is the Hypothesis random input deemed sufficient?
+
+Is it necessary to test that the return value of len() is a POSITIVE integer, or is this assumed?
+
+Is there a limit on the number of items that the queue can contain?
+
+Is there a limit on the number of example items that Hypothesis should be allowed to generate (using the @settings decorator)?
+
+If the queue is empty, should len() return 0?
+
+Does len() alter the queue in any way?
+
+What should the test prefix be if multiple methods are being tested simultaneously?
+
+Is it permissible to have multiple tests for the same property?
+
+Will redundant or weak properties be penalized?
+
+Can I use the same strategy for all tests that test the enqueue method, or should I regenerate the strategy for each test? In other words, can the same set of randomly generated values be used for each test?
+
+Can I use a regular paramaterized unit test (one that does not use randomly generated inputs) to test that None, Nan, Inf, and -Inf correctly raise a ValueError exception?
+
+Must all of the tests leverage Hypothesis/random values? Testing the an empty queue returns 1, for example, seems to be independent of input.

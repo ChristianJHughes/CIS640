@@ -1,0 +1,3 @@
+Are the implementation constraints for this program the same as in Homework 2 (Develop Another Python Program)?
+
+What sort of exception should be raised if the argument passed to tic_tac_toe_check() is not a valid list?

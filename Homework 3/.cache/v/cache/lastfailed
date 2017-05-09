@@ -1,0 +1,14 @@
+{
+  "test_impl.py::TestAddPersonProperty::()::test_add_property_to_person_that_does_not_exist": true,
+  "test_impl.py::TestAddPersonProperty::()::test_adding_a_name_non_string_value": true,
+  "test_impl.py::TestAddPersonProperty::()::test_overwrites_existing_property": true,
+  "test_impl.py::TestAddPersonProperty::()::test_try_to_add_existing_name_to_new_person": true,
+  "test_impl.py::TestAddRelation::()::test_add_relation_to_already_related_persons": true,
+  "test_impl.py::TestAddRelation::()::test_person1_and_person2_do_not_exist": true,
+  "test_impl.py::TestAddRelation::()::test_person1_does_not_exist": true,
+  "test_impl.py::TestAddRelation::()::test_person2_does_not_exist": true,
+  "test_impl.py::TestAddRelationProperty::()::test_person1_and_person2_do_not_exist": true,
+  "test_impl.py::TestAddRelationProperty::()::test_person1_does_not_exist": true,
+  "test_impl.py::TestAddRelationProperty::()::test_person2_does_not_exist": true,
+  "test_impl.py::TestGetPerson::()::test_pass_non_string_parameter": true
+}

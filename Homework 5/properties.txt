@@ -1,0 +1,17 @@
+If the Queue is empty (defined as have length of 0), then calls to dequeue will return None.
+
+If a value being added to the Queue with the enqueue method is Non, Nan, Inf, or -Inf, then ValueError Exception should be raised.
+
+If a Queue is empty, then it has a length of 0.
+
+If enqueue is called, then the length of the Queue increases by 1.
+
+If dequeue is called "successfully" (defined as returning a non-None value), then the length of the Queue decreases by 1.
+
+If dequeue is called "not successfully" (defined as returning a None value), then the length of the Queue is not altered.
+
+If there are n number of enqueues immediately followed by n number of dequeues (no Queue altering operations in between, non-Queue altering operations are permissible), then the dequeued values should be observed in the same order in which they were enqueued.
+
+If dequeue is called "successfully" (defined as returning a non-None value), then the least recently enqueued value not already returned by dequeue will be returned.
+
+If length is called multiple times in a row (with no interceding operations), then the same same value will be returned each time (the len() operation does not modify the Queue).
